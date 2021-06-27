@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangki.css">
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.1-web/css/all.min.css">
+    <title>dang ki</title>
+
+    <?php
+        $connect = mysqli_connect('localhost','root', "");
+    ?>
+</head>
+<body>
+<div class="header_dangki">
+    <div class="dangki">
+        <form action="" class="form_dangki">
+            <ul class="ul_dangki">
+                <li class="form1">Đăng Kí</li>
+                <li class="form2"> <input class="text_ten" type="text" placeholder="Tên đăng kí" ></li>
+                <li class="form2"> <input class="text_ten" type="text" name="sdt" placeholder="Số điện thoại"></li>
+                <li class="form2"> <input class="text_ten" type="password" name="pass" placeholder="mật khẩu"></li>
+                <li style="margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif;"> <input type="checkbox"> <span>Đồng ý với các điều khoản của chúng tôi </span></li>
+                <li class="form3"> <input class="butdk" type="button" value="Đăng kí"></li>
+            </ul>
+            <div class="hoac">
+                <div class="gachngang"></div>
+                <span style="margin: 0px 15px;">HOẶC</span>
+                <div class="gachngang"></div>
+            </div>
+            <div class="button_app">
+                <button class="button_fb">
+                    <div class="link_app-fb">
+                        <div ><i style="font-size: 22px;" class="fab fa-facebook"></i></div>
+                        <span class="text_fb" style="color: while;">Facebook</span>
+                    </div>
+                </button>
+                <button class="button_gg">
+                    <div class="link_app-gg">
+                        <div><img class="img-gg" src="/image/dangki/gg.png" alt=""></div>
+                        <span class="text_gg">Google</span>
+                    </div>
+                </button>
+                <button class="button_apple">
+                    <div class="link_app-store">
+                        <div><i style="font-size: 22px; margin-left: 12px;" class="fab fa-apple"></i></div>
+                        <span class="text_apple">Apple</span>
+                    </div>
+                </button>
+            </div>
+            <div>
+
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
